@@ -11,7 +11,8 @@ const projects = [
     title: "TicTac — X y O",
     tags: ["React", "Juego"],
     description: "Juego de Tic Tac Toe con lógica, turnos, ganador y reinicio.",
-    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/image.png",
+    
+    img: "/image.png",
     repo: "https://github.com/Kyaajjs/TicTac",
     live: "https://kyaajjs.github.io/TicTac/",
   },
@@ -20,7 +21,8 @@ const projects = [
     title: "CRUD de Formulario",
     tags: ["React", "CRUD", "Form"],
     description: "Formulario con operaciones CRUD, validación y manejo de estado.",
-    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/formulariocrud2.png",
+   
+    img: "/formulariocrud2.png",
     repo: "https://github.com/Kyaajjs/CrudFormulario",
     live: "",
   },
@@ -29,7 +31,8 @@ const projects = [
     title: "Escapa de SoyPan",
     tags: ["JavaScript", "Canvas", "Juego"],
     description: "Arcade 2D hecho con JavaScript puro.",
-    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/dos.png",
+   
+    img: "/dos.png",
     repo: "https://github.com/Kyaajjs/EscapaDeSoyPan",
     live: "https://kyaajjs.github.io/EscapaDeSoyPan/",
   },
@@ -38,7 +41,8 @@ const projects = [
     title: "Red Social",
     tags: ["React", "Firebase"],
     description: "Mini red social con creación de posts, autenticación y base de datos.",
-    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/redsocial.png",
+  
+    img: "/redsocial.png",
     repo: "https://github.com/Kyaajjs/RedSocial",
     live: "https://kyaajjs.github.io/RedSocial/",
   },
@@ -47,7 +51,8 @@ const projects = [
     title: "Glosario Final",
     tags: ["React", "Educación"],
     description: "Glosario interactivo para conceptos de HTML, CSS y JS.",
-    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/glosario.png",
+  
+    img: "/glosario.png",
     repo: "https://github.com/Kyaajjs/GlosarioFinal",
     live: "https://kyaajjs.github.io/GlosarioFinal/",
   },
@@ -128,12 +133,12 @@ function TiltCard({ project }) {
 
           <div className="links">
             {project.repo && (
-              <a href={project.repo} target="_blank">
+              <a href={project.repo} target="_blank" rel="noopener noreferrer">
                 Repositorio
               </a>
             )}
             {project.live && (
-              <a href={project.live} target="_blank">
+              <a href={project.live} target="_blank" rel="noopener noreferrer">
                 Demo
               </a>
             )}
@@ -174,7 +179,7 @@ export default function App() {
           <h3 className="hero-role">Developer of madness</h3>
 
           <p className="hero-sub">
-            Uso de REACT,JS, NODE, FLUTTER, JAVASCRIPT, entre otros lenguajes de programacion.  
+            Uso de REACT,JS, NODE, FLUTTER, JAVASCRIPT, entre otros lenguajes de programacion. 
             Orientado al desarrollo de apliaciones WEB.
           </p>
 
@@ -187,7 +192,8 @@ export default function App() {
 
         <img 
           className="avatar" 
-          src="https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/profile1.jpg" 
+      
+          src="/profile1.jpg" 
           alt="avatar" 
         />
       </section>
@@ -216,7 +222,7 @@ export default function App() {
         <div className="about-box">
           <p>
             Soy estudiante de la UACAM (matrícula 66575). Me enfoco en
-            interfaces limpias y dinámicas.  
+            interfaces limpias y dinámicas. 
             Me apasionan las paginas WEB, y la experiencia de usuario.
           </p>
         </div>
