@@ -1,14 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./App.css";
 
-// Importar todas las imágenes
-import tictacImage from "./assets/img/image.png";
-import crudImage from "./assets/img/formulariocrud2.png";
-import soyPanImage from "./assets/img/dos.png";
-import redSocialImage from "./assets/img/redsocial.png";
-import glosarioImage from "./assets/img/glosario.png";
-import profileImage from "./assets/img/profile1.jpg";
-
 /* ==========================
    PROYECTOS DEL PORTAFOLIO
    ========================== */
@@ -18,9 +10,8 @@ const projects = [
     id: 1,
     title: "TicTac — X y O",
     tags: ["React", "Juego"],
-    description:
-      "Juego de Tic Tac Toe con lógica, turnos, ganador y reinicio. Desplegado en GitHub Pages.",
-    img: tictacImage,  
+    description: "Juego de Tic Tac Toe con lógica, turnos, ganador y reinicio.",
+    img: "/img/image.png",
     repo: "https://github.com/Kyaajjs/TicTac",
     live: "https://kyaajjs.github.io/TicTac/",
   },
@@ -28,9 +19,8 @@ const projects = [
     id: 2,
     title: "CRUD de Formulario",
     tags: ["React", "CRUD", "Form"],
-    description:
-      "Formulario con operaciones CRUD, validación y manejo de estado.",
-    img: crudImage,  
+    description: "Formulario con operaciones CRUD, validación y manejo de estado.",
+    img: "/img/formulariocrud2.png",
     repo: "https://github.com/Kyaajjs/CrudFormulario",
     live: "",
   },
@@ -39,7 +29,7 @@ const projects = [
     title: "Escapa de SoyPan",
     tags: ["JavaScript", "Canvas", "Juego"],
     description: "Arcade 2D hecho con JavaScript puro.",
-    img: soyPanImage,  
+    img: "/img/dos.png",
     repo: "https://github.com/Kyaajjs/EscapaDeSoyPan",
     live: "https://kyaajjs.github.io/EscapaDeSoyPan/",
   },
@@ -47,9 +37,8 @@ const projects = [
     id: 4,
     title: "Red Social",
     tags: ["React", "Firebase"],
-    description:
-      "Mini red social con creación de posts, autenticación y base de datos.",
-    img: redSocialImage,  
+    description: "Mini red social con creación de posts, autenticación y base de datos.",
+    img: "/img/redsocial.png",
     repo: "https://github.com/Kyaajjs/RedSocial",
     live: "https://kyaajjs.github.io/RedSocial/",
   },
@@ -57,14 +46,12 @@ const projects = [
     id: 5,
     title: "Glosario Final",
     tags: ["React", "Educación"],
-    description:
-      "Glosario interactivo para conceptos de HTML, CSS y JS.",
-    img: glosarioImage,  
+    description: "Glosario interactivo para conceptos de HTML, CSS y JS.",
+    img: "/img/glosario.png",
     repo: "https://github.com/Kyaajjs/GlosarioFinal",
     live: "https://kyaajjs.github.io/GlosarioFinal/",
   },
 ];
-
 
 function TiltCard({ project }) {
   const elRef = useRef(null);
@@ -95,8 +82,7 @@ function TiltCard({ project }) {
         translateZ(26px)
       `;
 
-      const angle =
-        Math.atan2(py - 0.5, px - 0.5) * (180 / Math.PI) + 90;
+      const angle = Math.atan2(py - 0.5, px - 0.5) * (180 / Math.PI) + 90;
 
       shine.style.transform = `rotate(${angle}deg)`;
       shine.style.opacity = "1";
@@ -199,7 +185,11 @@ export default function App() {
           </div>
         </div>
 
-        <img className="avatar" src={profileImage} alt="avatar" />  {}
+        <img 
+          className="avatar" 
+          src="/img/profile1.jpg" 
+          alt="avatar" 
+        />
       </section>
 
       {/* PROYECTOS */}
