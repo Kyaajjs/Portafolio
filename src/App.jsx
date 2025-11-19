@@ -11,7 +11,7 @@ const projects = [
     title: "TicTac — X y O",
     tags: ["React", "Juego"],
     description: "Juego de Tic Tac Toe con lógica, turnos, ganador y reinicio.",
-    img: "/image.png",  
+    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/image.png",
     repo: "https://github.com/Kyaajjs/TicTac",
     live: "https://kyaajjs.github.io/TicTac/",
   },
@@ -20,7 +20,7 @@ const projects = [
     title: "CRUD de Formulario",
     tags: ["React", "CRUD", "Form"],
     description: "Formulario con operaciones CRUD, validación y manejo de estado.",
-    img: "/formulariocrud2.png",  
+    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/formulariocrud2.png",
     repo: "https://github.com/Kyaajjs/CrudFormulario",
     live: "",
   },
@@ -29,7 +29,7 @@ const projects = [
     title: "Escapa de SoyPan",
     tags: ["JavaScript", "Canvas", "Juego"],
     description: "Arcade 2D hecho con JavaScript puro.",
-    img: "/dos.png",  
+    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/dos.png",
     repo: "https://github.com/Kyaajjs/EscapaDeSoyPan",
     live: "https://kyaajjs.github.io/EscapaDeSoyPan/",
   },
@@ -38,7 +38,7 @@ const projects = [
     title: "Red Social",
     tags: ["React", "Firebase"],
     description: "Mini red social con creación de posts, autenticación y base de datos.",
-    img: "/redsocial.png",  
+    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/redsocial.png",
     repo: "https://github.com/Kyaajjs/RedSocial",
     live: "https://kyaajjs.github.io/RedSocial/",
   },
@@ -47,7 +47,7 @@ const projects = [
     title: "Glosario Final",
     tags: ["React", "Educación"],
     description: "Glosario interactivo para conceptos de HTML, CSS y JS.",
-    img: "/glosario.png",  
+    img: "https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/glosario.png",
     repo: "https://github.com/Kyaajjs/GlosarioFinal",
     live: "https://kyaajjs.github.io/GlosarioFinal/",
   },
@@ -187,7 +187,7 @@ export default function App() {
 
         <img 
           className="avatar" 
-          src="/profile1.jpg"  
+          src="https://raw.githubusercontent.com/Kyaajjs/Portafolio/master/public/profile1.jpg" 
           alt="avatar" 
         />
       </section>
