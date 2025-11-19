@@ -1,6 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import "./App.css";
 
+// Importar todas las imágenes
+import tictacImage from "./assets/img/image.png";
+import crudImage from "./assets/img/formulariocrud2.png";
+import soyPanImage from "./assets/img/dos.png";
+import redSocialImage from "./assets/img/redsocial.png";
+import glosarioImage from "./assets/img/glosario.png";
+import profileImage from "./assets/img/profile1.jpg";
+
 /* ==========================
    PROYECTOS DEL PORTAFOLIO
    ========================== */
@@ -12,7 +20,7 @@ const projects = [
     tags: ["React", "Juego"],
     description:
       "Juego de Tic Tac Toe con lógica, turnos, ganador y reinicio. Desplegado en GitHub Pages.",
-    img: "./img/image.png",  // <- CORREGIDO
+    img: tictacImage,  
     repo: "https://github.com/Kyaajjs/TicTac",
     live: "https://kyaajjs.github.io/TicTac/",
   },
@@ -22,7 +30,7 @@ const projects = [
     tags: ["React", "CRUD", "Form"],
     description:
       "Formulario con operaciones CRUD, validación y manejo de estado.",
-    img: "./img/formulariocrud2.png",  // <- CORREGIDO
+    img: crudImage,  
     repo: "https://github.com/Kyaajjs/CrudFormulario",
     live: "",
   },
@@ -31,7 +39,7 @@ const projects = [
     title: "Escapa de SoyPan",
     tags: ["JavaScript", "Canvas", "Juego"],
     description: "Arcade 2D hecho con JavaScript puro.",
-    img: "src/assets/img/dos.png",  // <- CORREGIDO
+    img: soyPanImage,  
     repo: "https://github.com/Kyaajjs/EscapaDeSoyPan",
     live: "https://kyaajjs.github.io/EscapaDeSoyPan/",
   },
@@ -41,7 +49,7 @@ const projects = [
     tags: ["React", "Firebase"],
     description:
       "Mini red social con creación de posts, autenticación y base de datos.",
-    img: "./img/redsocial.png",  // <- CORREGIDO
+    img: redSocialImage,  
     repo: "https://github.com/Kyaajjs/RedSocial",
     live: "https://kyaajjs.github.io/RedSocial/",
   },
@@ -51,15 +59,12 @@ const projects = [
     tags: ["React", "Educación"],
     description:
       "Glosario interactivo para conceptos de HTML, CSS y JS.",
-    img: "./img/glosario.png",  // <- CORREGIDO
+    img: glosarioImage,  
     repo: "https://github.com/Kyaajjs/GlosarioFinal",
     live: "https://kyaajjs.github.io/GlosarioFinal/",
   },
 ];
 
-/* ==========================
-   TARJETA 3D
-   ========================== */
 
 function TiltCard({ project }) {
   const elRef = useRef(null);
@@ -194,7 +199,7 @@ export default function App() {
           </div>
         </div>
 
-        <img className="avatar" src="./img/profile1.jpg" alt="avatar" />  {/* <- CORREGIDO */}
+        <img className="avatar" src={profileImage} alt="avatar" />  {}
       </section>
 
       {/* PROYECTOS */}
@@ -245,4 +250,4 @@ export default function App() {
       </footer>
     </div>
   );
-} 
+}
