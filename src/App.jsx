@@ -31,7 +31,7 @@ const projects = [
     title: "Escapa de SoyPan",
     tags: ["JavaScript", "Canvas", "Juego"],
     description: "Arcade 2D hecho con JavaScript puro.",
-    img: "assets/img/dos.png",  // <- CORREGIDO
+    img: "src/assets/img/dos.png",  // <- CORREGIDO
     repo: "https://github.com/Kyaajjs/EscapaDeSoyPan",
     live: "https://kyaajjs.github.io/EscapaDeSoyPan/",
   },
