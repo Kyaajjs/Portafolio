@@ -12,7 +12,7 @@ const projects = [
     tags: ["React", "Juego"],
     description:
       "Juego de Tic Tac Toe con lógica, turnos, ganador y reinicio. Desplegado en GitHub Pages.",
-    img: "img/image.png",
+    img: "./img/image.png",  // <- CORREGIDO
     repo: "https://github.com/Kyaajjs/TicTac",
     live: "https://kyaajjs.github.io/TicTac/",
   },
@@ -22,7 +22,7 @@ const projects = [
     tags: ["React", "CRUD", "Form"],
     description:
       "Formulario con operaciones CRUD, validación y manejo de estado.",
-    img: "img/formulariocrud2.png",
+    img: "./img/formulariocrud2.png",  // <- CORREGIDO
     repo: "https://github.com/Kyaajjs/CrudFormulario",
     live: "",
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "Escapa de SoyPan",
     tags: ["JavaScript", "Canvas", "Juego"],
     description: "Arcade 2D hecho con JavaScript puro.",
-    img: "img/dos.png",
+    img: "./img/dos.png",  // <- CORREGIDO
     repo: "https://github.com/Kyaajjs/EscapaDeSoyPan",
     live: "https://kyaajjs.github.io/EscapaDeSoyPan/",
   },
@@ -41,7 +41,7 @@ const projects = [
     tags: ["React", "Firebase"],
     description:
       "Mini red social con creación de posts, autenticación y base de datos.",
-    img: "img/redsocial.png",
+    img: "./img/redsocial.png",  // <- CORREGIDO
     repo: "https://github.com/Kyaajjs/RedSocial",
     live: "https://kyaajjs.github.io/RedSocial/",
   },
@@ -51,7 +51,7 @@ const projects = [
     tags: ["React", "Educación"],
     description:
       "Glosario interactivo para conceptos de HTML, CSS y JS.",
-    img: "img/glosario.png",
+    img: "./img/glosario.png",  // <- CORREGIDO
     repo: "https://github.com/Kyaajjs/GlosarioFinal",
     live: "https://kyaajjs.github.io/GlosarioFinal/",
   },
@@ -194,7 +194,7 @@ export default function App() {
           </div>
         </div>
 
-        <img className="avatar" src="img/profile1.jpg" alt="avatar" />
+        <img className="avatar" src="./img/profile1.jpg" alt="avatar" />  {/* <- CORREGIDO */}
       </section>
 
       {/* PROYECTOS */}
